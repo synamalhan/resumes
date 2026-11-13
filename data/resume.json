@@ -1,0 +1,245 @@
+{
+  "name": "Syna Malhan",
+  "links": [
+    {"label": "Portfolio", "url": "https://synamalhan.github.io/website/"},
+    {"label": "synamalhan22@gmail.com", "url": "mailto:synamalhan22@gmail.com"},
+    {"label": "LinkedIn", "url": "https://www.linkedin.com/in/synamalhan/"},
+    {"label": "GitHub", "url": "https://github.com/synamalhan"}
+  ],
+  "variants": {
+    "main": {"label": "General (ML / Data Science)", "file": "syna-malhan", "title": "SYNA MALHAN"},
+    "ml": {"label": "Machine Learning", "file": "ml", "title": "SYNA MALHAN ML"},
+    "ds": {"label": "Data Science", "file": "data-science", "title": "SYNA MALHAN DS"},
+    "genai": {"label": "Generative AI", "file": "genai", "title": "SYNA MALHAN GENAI"},
+    "cv": {"label": "Computer Vision", "file": "computer-vision", "title": "SYNA MALHAN CV"},
+    "res": {"label": "Research", "file": "research", "title": "SYNA MALHAN R"},
+    "swe": {"label": "Software Engineering", "file": "swe", "title": "SYNA MALHAN SWE"},
+    "apple": {"label": "Apple", "file": "apple", "title": "SYNA MALHAN A"}
+  },
+  "taglines": {
+    "main": "Machine Learning • Data Science • Computer Vision • Cloud Analytics",
+    "ml": "Machine Learning Engineering • Predictive Modeling • Applied AI Systems",
+    "ds": "Data Science • Statistical Modeling • Machine Learning Applications",
+    "genai": "Generative AI • LLM Systems • Retrieval-Augmented Generation • Applied Machine Learning",
+    "cv": "Computer Vision • Deep Learning • Vision-Language Models • Applied AI Systems",
+    "res": "Machine Learning Research • Vision-Language Models • Unsupervised Learning • Applied AI",
+    "swe": "Software Engineering • Cloud & Backend Systems • Scalable AI Applications",
+    "apple": "Machine Learning • Computer Vision • Multimodal AI • Software Engineering"
+  },
+  "education": {
+    "school": "Arizona State University",
+    "date": "Expected May 2027",
+    "degree": "B.S. Computer Science, Minor in Data Science",
+    "gpa": "GPA: 3.87/4.0",
+    "honors": {
+      "t": "Dean's List (5x), Grace Hopper Celebration Scholar, NAMU Scholar",
+      "extra": [{"t": ", Headstarter AI SWE Fellowship (Top 5 of 500+ teams)", "v": ["apple"]}]
+    }
+  },
+  "sections": [
+    {
+      "title": "Research Interests",
+      "kind": "text",
+      "v": ["res"],
+      "text": "Vision-language models for medical video; learning without ground truth (unsupervised clustering, anomaly detection); robustness of vision and sensor models under low-quality data; spatio-temporal models for transportation systems"
+    },
+    {
+      "title": "Technical Skills",
+      "kind": "skills",
+      "items": [
+        {"label": "Languages", "t": "Python, SQL, Java, C++, JavaScript", "extra": [{"t": ", TypeScript", "v": ["swe"]}, {"t": ", Swift", "v": ["apple", "swe"]}]},
+        {"label": "Machine Learning", "v": ["main", "ml", "ds", "res", "apple"], "t": "CNNs, Transformers, VLMs, GNNs, Clustering (HDBSCAN), Anomaly Detection, Time-Series Forecasting, Generative AI, RAG, Diffusion Models"},
+        {"label": "Computer Vision", "v": ["cv"], "t": "CNNs, Object Detection (YOLO, Faster R-CNN), Segmentation (U-Net, SAM/FastSAM), VLMs (CLIP), OCR, Camera Calibration, Data Augmentation, Diffusion Models"},
+        {"label": "Generative AI & LLMs", "v": ["genai"], "t": "Transformers, RAG, Graph RAG (Neo4j), Prompt Engineering, Embedding Models, Vector Search (FAISS, Pinecone), LangGraph, Local LLMs (Ollama), Diffusion Models (LoRA), VLMs"},
+        {"label": "Data Science", "v": ["main", "ds", "ml"], "t": "EDA, Feature Engineering, Statistical Modeling, Predictive Analytics, Experimentation, Failure Analysis, Root Cause Analysis"},
+        {"label": "Apple Platforms", "v": ["apple"], "t": "SwiftUI, Core ML, HealthKit, SwiftData, iOS/macOS app development"},
+        {"label": "Backend & Systems", "v": ["swe"], "t": "REST APIs, FastAPI, Flask, Docker, Serverless Architectures, React, Next.js, SwiftUI"},
+        {"label": "Frameworks", "t": "PyTorch, Hugging Face, Scikit-Learn, Pandas, NumPy, XGBoost, Neo4j", "extra": [{"t": ", LangGraph, FAISS, Pinecone, Ollama", "v": ["genai"]}, {"t": ", OpenCV, Ultralytics, TensorFlow/Keras", "v": ["cv"]}, {"t": ", TensorFlow/Keras", "v": ["res"]}, {"t": ", OpenCV, FastAPI", "v": ["apple"]}]},
+        {"label": "Cloud & Data", "t": "AWS (EC2, Lambda, DynamoDB), Snowflake, GCP, Azure, REST APIs, SAP", "extra": [{"t": ", MS SQL Server", "v": ["ds", "swe"]}]},
+        {"label": "Visualization & Apps", "v": ["ds"], "t": "Plotly, Matplotlib, Seaborn, Folium, Streamlit"},
+        {"label": "CS Fundamentals", "v": ["apple", "swe"], "t": "Data Structures & Algorithms, Operating Systems, Concurrency, Memory Management, Programming Language Semantics"}
+      ]
+    },
+    {
+      "title": "Experience",
+      "kind": "entries",
+      "items": [
+        {
+          "head": "Micron Technology", "after": "Data Science Intern", "date": "May 2026 – Aug 2026",
+          "bullets": [
+            {"t": "Built an unsupervised clustering pipeline (HDBSCAN) that groups post-manufacturing chip failures by underlying root cause with no labeled ground truth, validated iteratively with domain engineers."},
+            {"v": ["main", "ml", "ds", "genai", "cv", "res", "apple"], "t": "Engineered statistical features and anomaly detection workflows to strengthen process monitoring and accelerate failure analysis."},
+            {"t": "Architected scalable Snowflake and GCP/Azure workflows processing large-scale failure analysis data to power production analytics apps."},
+            {"v": ["ds", "genai"], "t": "Built a Claude-based internal AI skill on top of a widely used Micron library, extending existing engineering workflows with automated analysis."},
+            {"v": ["main", "ml", "ds", "swe"], "t": "Partnered with engineering, manufacturing, and data teams to translate complex domain problems into scalable enterprise applications."}
+          ]
+        },
+        {
+          "head": "ASU Pulse Tutoring", "after": "Computer Science and Mathematics Tutor", "date": "Aug 2026 – Present",
+          "bullets": [
+            {"t": "Tutor undergraduate students in Calculus I and II, covering limits, derivatives, integration techniques, sequences, and series."},
+            {"t": "Support upper-division CS coursework in Data Structures & Algorithms, Operating Systems, and Principles of Programming Languages."},
+            {"v": ["main", "swe", "apple"], "t": "Explain algorithmic complexity, trees and graphs, process scheduling, concurrency, memory management, and language semantics."},
+            {"v": ["main", "swe", "apple"], "t": "Guide students through debugging and problem decomposition, adapting explanations to build independent problem-solving skills."}
+          ]
+        },
+        {
+          "head": "MPS Lab, Arizona State University", "after": "Undergraduate Researcher", "date": "Aug 2025 – Aug 2026",
+          "bullets": [
+            {"t": "Conducted a comparative study of spatio-temporal neural approaches to traffic incident detection in Intelligent Transportation Systems, including IncidentNet and physics-informed methods."}
+          ]
+        },
+        {
+          "head": "Ernst & Young (EY)", "after": "ML & Generative AI Intern", "date": "Jun 2025 – Aug 2025",
+          "bullets": [
+            {"t": "Built a RAG prototype over a Neo4j credit-risk graph (customers, credit history, loan purpose) using embeddings, a FAISS vector store, and local LLMs orchestrated with LangGraph."},
+            {"v": ["genai"], "t": "Iterated on prompts and embedding choices to improve retrieval relevance for credit-risk questions."},
+            {"v": ["main", "ml", "ds", "genai", "cv", "res", "apple"], "t": "Benchmarked image-generation models on rendering accurate, legible text and fine-tuned an open diffusion model with LoRA to improve text quality for slide and chart visuals."}
+          ]
+        },
+        {
+          "head": "Infinite Uptime", "after": "Data Science Intern", "date": "Jul 2025 – Sep 2025",
+          "bullets": [
+            {"t": "Analyzed millions of industrial IoT sensor readings from rotating equipment and bearing systems."},
+            {"v": ["main", "ml", "ds", "genai", "cv", "res", "apple"], "t": "Engineered temporal, frequency-domain, and multivariate features to capture degradation trends and failure indicators."},
+            {"t": "Developed predictive machine learning models forecasting equipment failures days in advance to support predictive maintenance strategies."},
+            {"v": ["main", "ml", "ds", "res"], "t": "Delivered interpretable model outputs and failure explanations enabling data-driven maintenance planning."}
+          ]
+        },
+        {
+          "head": "ASU AI Cloud Innovation Center", "after": "Cloud Developer", "date": "Aug 2024 – Aug 2025",
+          "bullets": [
+            {"t": "Designed and deployed multiple production-grade AI applications serving academic and industry stakeholders."},
+            {"t": "Built full-stack applications integrating frontend systems with AWS-hosted APIs, DynamoDB databases, and cloud services."},
+            {"t": "Developed scalable cloud infrastructure using EC2, Lambda, and serverless architectures supporting real-time inference workloads."},
+            {"t": "Standardized deployment workflows and reusable cloud templates to accelerate development cycles."}
+          ]
+        },
+        {
+          "head": "Ripik AI", "after": "ML & Computer Vision Intern", "date": "Jul 2024 – Sep 2024",
+          "bullets": [
+            {"t": "Improved industrial slab-sizing accuracy from 76% to 97% using computer vision and image-processing pipelines."},
+            {"t": "Corrected camera distortion and improved model robustness through geometric calibration and targeted augmentation techniques."},
+            {"v": ["cv", "ml"], "t": "Used YOLO and FastSAM to detect and segment slab edges, and derived position-dependent pixel-to-real-world scaling so measurements held wherever the slab sat in frame."},
+            {"t": "Developed OCR for low-quality warehouse imagery and hand-marked slab identifiers using image deblurring and a fine-tuned OCR model, automating material identification and inventory workflows."}
+          ]
+        },
+        {
+          "head": "Jindal Steel Ltd. (JSPL)", "after": "Digitalization & ML Intern", "date": "Jun 2024 – Aug 2024",
+          "bullets": [
+            {"t": "Built XGBoost models forecasting finished-goods production time for plate-mill orders, grouping orders by setup similarity to cut changeovers."},
+            {"t": "Improved production planning efficiency by approximately 80% through predictive analytics and process optimization."},
+            {"t": "Designed logistics optimization systems reducing unused rake capacity and lowering transportation costs by roughly 60%."},
+            {"t": "Built internal digital platforms integrated with SAP systems and deployed on enterprise infrastructure.", "extra": [{"t": " Built a Streamlit forecasting app on MS SQL Server data (predict, batch predict, retrain).", "v": ["swe"]}]}
+          ]
+        },
+        {
+          "head": "Headstarter AI", "after": "Software Engineering Fellow", "date": "Aug 2024 – Oct 2024",
+          "bullets": [
+            {"t": "Built production-focused software solutions in collaborative hackathon environments", "extra": [{"t": " (Next.js, OpenAI API, Pinecone)", "v": ["genai", "swe"]}], "tail": "."},
+            {"t": "Worked with engineers from Amazon and Google on software architecture, development workflows, and code reviews."},
+            {"t": "Ranked Top 5 among 500+ participating teams based on technical execution and project quality."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "kind": "entries",
+      "items": [
+        {
+          "head": "Vision-Language Models for Surgical Video Analysis (Capstone)", "after": "Arizona State University (Advisor: Dr. Yalin Wang)", "date": "Aug 2026 – Present",
+          "bullets": [
+            {"t": "Developing vision-language models for neurosurgery video analysis, targeting surgical workflow and instrument recognition."},
+            {"t": "Building end-to-end PyTorch and Hugging Face pipelines to benchmark baseline and fine-tuned VLMs on real surgical video data."},
+            {"t": "Prototyping surgical video captioning and visual question answering systems, with experimental performance analysis."},
+            {"v": ["genai", "cv"], "t": "Prototyped a Dockerized zero-shot CLIP frame-labeling service (FastAPI inference + Streamlit UI)."}
+          ]
+        },
+        {
+          "head": "Recall: Private Personal Search Engine", "after": "Swift, SwiftUI, Core ML, SQLite", "v": ["apple", "genai"],
+          "bullets": [
+            {"t": "Built a native macOS app that semantically searches notes, PDFs, and screenshots and answers questions with an on-device language model, linking every answer to its source files."},
+            {"v": ["apple"], "t": "Designed a privacy-first architecture: local embedding, indexing in SQLite, and inference with no data leaving the device."}
+          ]
+        },
+        {
+          "head": "Pulse: Personal Health & Activity Analytics", "after": "Swift, SwiftUI, HealthKit, Core ML, SwiftData", "v": ["apple"],
+          "bullets": [
+            {"t": "Built an iOS app that reads HealthKit activity, sleep, and workout data to surface trends, detect anomalies, and generate evidence-based summaries that separate correlation from causation, all on-device."}
+          ]
+        },
+        {
+          "head": "WildSense: Wildlife Intelligence", "after": "Python, PyTorch, OpenCV", "v": ["apple"],
+          "bullets": [
+            {"t": "Built a detection, tracking, and identification system for camera-trap footage that is robust to low light, occlusion, and motion blur, with uncertainty-aware predictions."}
+          ]
+        },
+        {
+          "head": "Atlas: Multimodal Research Assistant", "v": ["genai"],
+          "bullets": [
+            {"t": "Built an AI research assistant that retrieves across scientific papers, figures, tables, and citations, with grounded responses and citation verification."}
+          ]
+        },
+        {
+          "head": "GitHub LinkedIn Post Generator", "after": "Python, Ollama, Streamlit", "v": ["genai"],
+          "bullets": [
+            {"t": "Built a local-LLM app that turns GitHub commit and README activity into LinkedIn posts, spotlighting featured projects."}
+          ]
+        },
+        {
+          "head": "Wildlife Monitoring & Endangered Species Protection", "v": ["main", "ml", "ds", "cv", "res"],
+          "bullets": [
+            {"t": "Developed computer vision models (YOLO, Faster R-CNN, SAM/FastSAM) to detect and classify wildlife species from camera trap datasets."},
+            {"t": "Improved robustness to motion blur, occlusion, and low-light environmental conditions."}
+          ]
+        },
+        {
+          "head": "Graph-Based Recommendation System", "v": ["main", "ml", "ds", "res"],
+          "bullets": [
+            {"t": "Modeled user-item interactions as graph structures and trained graph-based recommendation models."},
+            {"t": "Leveraged graph learning techniques to improve recommendation relevance compared to collaborative filtering baselines."},
+            {"t": "Evaluated recommendation performance using ranking and relevance metrics."}
+          ]
+        },
+        {
+          "head": "Medical Image Analysis for Early Brain Tumor Detection", "after": "TensorFlow, Keras", "v": ["cv"],
+          "bullets": [
+            {"t": "Trained a ResNet classifier and a U-Net segmentation model on brain MRI scans with preprocessing and augmentation, evaluated with accuracy, F1, Dice, and IoU, and served through a Streamlit demo."}
+          ]
+        },
+        {
+          "head": "Portfolio Analyzer & Stock Prediction Dashboard", "after": "Python, Streamlit, Random Forest, LSTM", "v": ["ds"],
+          "bullets": [
+            {"t": "Built a Streamlit dashboard that pulls market data (yfinance), computes risk-return metrics (Sharpe, Sortino), and compares Random Forest and LSTM price forecasts."}
+          ]
+        },
+        {
+          "head": "EchoBench: Speech AI Benchmarking", "after": "Python, PyTorch, FastAPI", "v": ["res", "apple"],
+          "bullets": [
+            {"t": "Built a platform that evaluates speech recognition models across accents, noise, and speaking conditions on accuracy, latency, and subgroup performance, with statistical significance testing."}
+          ]
+        },
+        {
+          "head": "Surgical Frame Labeler", "after": "FastAPI, Streamlit, Docker, OpenCV (Capstone prototype)", "v": ["swe"],
+          "bullets": [
+            {"t": "Built a two-service, Dockerized prototype: a FastAPI inference service that samples video frames with OpenCV and scores them with zero-shot CLIP, and a Streamlit UI showing labeled frames and label counts."},
+            {"t": "Wired the services with Docker Compose, a shared data volume, and a health check gating startup."}
+          ]
+        },
+        {
+          "head": "Career Pilot", "after": "React, Vite, Python", "v": ["swe"],
+          "bullets": [
+            {"t": "Built a full-stack app with a React frontend and Python backend that parses resume PDFs and uses LLM prompts to generate resume feedback and internship-prep guidance."}
+          ]
+        },
+        {
+          "head": "Health Metrics Dashboard", "after": "SwiftUI, HealthKit, MVVM, Swift Concurrency", "v": ["swe"],
+          "bullets": [
+            {"t": "Built an iOS app that centralizes HealthKit metrics across iPhone and Apple Watch using MVVM and async data fetching, with Keychain and Secure Enclave for secure storage and XCTest coverage."}
+          ]
+        }
+      ]
+    }
+  ]
+}

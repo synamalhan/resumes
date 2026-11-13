@@ -1,0 +1,193 @@
+\documentclass[a4paper,8pt]{extarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{left=0.45in,right=0.45in,top=0.2in,bottom=0.2in}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\linespread{0.95}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+\setlist[itemize]{
+    noitemsep,
+    topsep=1pt,
+    leftmargin=*,
+    itemsep=1pt
+}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Syna Malhan}}\\
+Machine Learning Research \textbullet\  Vision-Language Models \textbullet\  Unsupervised Learning \textbullet\  Applied AI\\
+\href{https://synamalhan.github.io/website/}{Portfolio}
+\;|\;
+\href{mailto:synamalhan22@gmail.com}{synamalhan22@gmail.com}
+\;|\;
+\href{https://www.linkedin.com/in/synamalhan/}{LinkedIn}
+\;|\;
+\href{https://github.com/synamalhan}{GitHub}
+\end{center}
+
+\section*{Education}
+
+\noindent
+\textbf{Arizona State University} \hfill \textit{Expected May 2027}\\
+\noindent
+B.S. Computer Science, Minor in Data Science \hfill GPA: 3.87/4.0\\
+\noindent
+\textbf{Honors:} Dean's List (5x), Grace Hopper Celebration Scholar, NAMU Scholar
+
+\section*{Research Interests}
+
+\noindent
+Vision-language models for medical video; learning without ground truth (unsupervised clustering, anomaly detection); robustness of vision and sensor models under low-quality data; spatio-temporal models for transportation systems
+
+\section*{Technical Skills}
+
+\noindent
+\textbf{Languages:} Python, SQL, Java, C++, JavaScript
+
+\noindent
+\textbf{Machine Learning:} CNNs, Transformers, VLMs, GNNs, Clustering (HDBSCAN), Anomaly Detection, Time-Series Forecasting, Generative AI, RAG, Diffusion Models
+
+\noindent
+\textbf{Frameworks:} PyTorch, Hugging Face, Scikit-Learn, Pandas, NumPy, XGBoost, Neo4j, TensorFlow/Keras
+
+\noindent
+\textbf{Cloud \& Data:} AWS (EC2, Lambda, DynamoDB), Snowflake, GCP, Azure, REST APIs, SAP
+
+\section*{Experience}
+
+\noindent
+\textbf{Micron Technology} --- Data Science Intern
+\hfill \textit{May 2026 -- Aug 2026}
+
+\begin{itemize}
+\item Built an unsupervised clustering pipeline (HDBSCAN) that groups post-manufacturing chip failures by underlying root cause with no labeled ground truth, validated iteratively with domain engineers.
+\item Engineered statistical features and anomaly detection workflows to strengthen process monitoring and accelerate failure analysis.
+\item Architected scalable Snowflake and GCP/Azure workflows processing large-scale failure analysis data to power production analytics apps.
+\end{itemize}
+
+\noindent
+\textbf{ASU Pulse Tutoring} --- Computer Science and Mathematics Tutor
+\hfill \textit{Aug 2026 -- Present}
+
+\begin{itemize}
+\item Tutor undergraduate students in Calculus I and II, covering limits, derivatives, integration techniques, sequences, and series.
+\item Support upper-division CS coursework in Data Structures \& Algorithms, Operating Systems, and Principles of Programming Languages.
+\end{itemize}
+
+\noindent
+\textbf{MPS Lab, Arizona State University} --- Undergraduate Researcher
+\hfill \textit{Aug 2025 -- Aug 2026}
+
+\begin{itemize}
+\item Conducted a comparative study of spatio-temporal neural approaches to traffic incident detection in Intelligent Transportation Systems, including IncidentNet and physics-informed methods.
+\end{itemize}
+
+\noindent
+\textbf{Ernst \& Young (EY)} --- ML \& Generative AI Intern
+\hfill \textit{Jun 2025 -- Aug 2025}
+
+\begin{itemize}
+\item Built a RAG prototype over a Neo4j credit-risk graph (customers, credit history, loan purpose) using embeddings, a FAISS vector store, and local LLMs orchestrated with LangGraph.
+\item Benchmarked image-generation models on rendering accurate, legible text and fine-tuned an open diffusion model with LoRA to improve text quality for slide and chart visuals.
+\end{itemize}
+
+\noindent
+\textbf{Infinite Uptime} --- Data Science Intern
+\hfill \textit{Jul 2025 -- Sep 2025}
+
+\begin{itemize}
+\item Analyzed millions of industrial IoT sensor readings from rotating equipment and bearing systems.
+\item Engineered temporal, frequency-domain, and multivariate features to capture degradation trends and failure indicators.
+\item Developed predictive machine learning models forecasting equipment failures days in advance to support predictive maintenance strategies.
+\item Delivered interpretable model outputs and failure explanations enabling data-driven maintenance planning.
+\end{itemize}
+
+\noindent
+\textbf{ASU AI Cloud Innovation Center} --- Cloud Developer
+\hfill \textit{Aug 2024 -- Aug 2025}
+
+\begin{itemize}
+\item Designed and deployed multiple production-grade AI applications serving academic and industry stakeholders.
+\item Built full-stack applications integrating frontend systems with AWS-hosted APIs, DynamoDB databases, and cloud services.
+\item Developed scalable cloud infrastructure using EC2, Lambda, and serverless architectures supporting real-time inference workloads.
+\item Standardized deployment workflows and reusable cloud templates to accelerate development cycles.
+\end{itemize}
+
+\noindent
+\textbf{Ripik AI} --- ML \& Computer Vision Intern
+\hfill \textit{Jul 2024 -- Sep 2024}
+
+\begin{itemize}
+\item Improved industrial slab-sizing accuracy from 76\% to 97\% using computer vision and image-processing pipelines.
+\item Corrected camera distortion and improved model robustness through geometric calibration and targeted augmentation techniques.
+\item Developed OCR for low-quality warehouse imagery and hand-marked slab identifiers using image deblurring and a fine-tuned OCR model, automating material identification and inventory workflows.
+\end{itemize}
+
+\noindent
+\textbf{Jindal Steel Ltd. (JSPL)} --- Digitalization \& ML Intern
+\hfill \textit{Jun 2024 -- Aug 2024}
+
+\begin{itemize}
+\item Built XGBoost models forecasting finished-goods production time for plate-mill orders, grouping orders by setup similarity to cut changeovers.
+\item Improved production planning efficiency by approximately 80\% through predictive analytics and process optimization.
+\item Designed logistics optimization systems reducing unused rake capacity and lowering transportation costs by roughly 60\%.
+\item Built internal digital platforms integrated with SAP systems and deployed on enterprise infrastructure.
+\end{itemize}
+
+\noindent
+\textbf{Headstarter AI} --- Software Engineering Fellow
+\hfill \textit{Aug 2024 -- Oct 2024}
+
+\begin{itemize}
+\item Built production-focused software solutions in collaborative hackathon environments.
+\item Worked with engineers from Amazon and Google on software architecture, development workflows, and code reviews.
+\item Ranked Top 5 among 500+ participating teams based on technical execution and project quality.
+\end{itemize}
+
+\section*{Projects}
+
+\noindent
+\textbf{Vision-Language Models for Surgical Video Analysis (Capstone)} --- Arizona State University (Advisor: Dr. Yalin Wang)
+\hfill \textit{Aug 2026 -- Present}
+
+\begin{itemize}
+\item Developing vision-language models for neurosurgery video analysis, targeting surgical workflow and instrument recognition.
+\item Building end-to-end PyTorch and Hugging Face pipelines to benchmark baseline and fine-tuned VLMs on real surgical video data.
+\item Prototyping surgical video captioning and visual question answering systems, with experimental performance analysis.
+\end{itemize}
+
+\noindent
+\textbf{Wildlife Monitoring \& Endangered Species Protection}
+
+\begin{itemize}
+\item Developed computer vision models (YOLO, Faster R-CNN, SAM/FastSAM) to detect and classify wildlife species from camera trap datasets.
+\item Improved robustness to motion blur, occlusion, and low-light environmental conditions.
+\end{itemize}
+
+\noindent
+\textbf{Graph-Based Recommendation System}
+
+\begin{itemize}
+\item Modeled user-item interactions as graph structures and trained graph-based recommendation models.
+\item Leveraged graph learning techniques to improve recommendation relevance compared to collaborative filtering baselines.
+\item Evaluated recommendation performance using ranking and relevance metrics.
+\end{itemize}
+
+\noindent
+\textbf{EchoBench: Speech AI Benchmarking} --- Python, PyTorch, FastAPI
+
+\begin{itemize}
+\item Built a platform that evaluates speech recognition models across accents, noise, and speaking conditions on accuracy, latency, and subgroup performance, with statistical significance testing.
+\end{itemize}
+
+\end{document}

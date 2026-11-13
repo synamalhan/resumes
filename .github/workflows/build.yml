@@ -20,18 +20,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate LaTeX from data/resume.json
+        run: node scripts/make_tex.mjs
+
       - name: Install LaTeX
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
-      - name: Build every version
+      - name: Compile every version
         run: |
           mkdir -p out
-          for pair in "main syna-malhan" "apple apple" "ds data-science" "genai genai" "cv computer-vision" "ml ml" "res research" "swe swe"; do
-            set -- $pair
-            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=out -jobname="$2" "\\def\\variant{$1}\\input{resume.tex}"
+          for f in build/*.tex; do
+            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=out "$f"
           done
           rm -f out/*.aux out/*.log out/*.out
           for f in out/*.pdf; do
@@ -39,28 +45,11 @@ jobs:
             if [ "$pages" != "1" ]; then echo "::warning::$f is $pages pages (should be 1)"; fi
           done
 
-      - name: Make the phone-friendly index page
+      - name: Assemble site
         run: |
-          cat > out/index.html <<'EOF'
-          <!doctype html>
-          <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Syna Malhan - Resumes</title>
-          <style>
-            body{font-family:system-ui,sans-serif;max-width:420px;margin:24px auto;padding:0 16px}
-            h1{font-size:1.3rem} a{display:block;padding:14px;margin:8px 0;border:1px solid #ccc;border-radius:10px;text-decoration:none;color:#111;font-size:1.05rem}
-            small{color:#666}
-          </style></head><body>
-          <h1>Syna Malhan - Resumes</h1>
-          <a href="syna-malhan.pdf">General (ML / Data Science)</a>
-          <a href="ml.pdf">Machine Learning</a>
-          <a href="data-science.pdf">Data Science</a>
-          <a href="genai.pdf">Generative AI</a>
-          <a href="computer-vision.pdf">Computer Vision</a>
-          <a href="research.pdf">Research</a>
-          <a href="swe.pdf">Software Engineering</a>
-          <a href="apple.pdf">Apple</a>
-          </body></html>
-          EOF
+          cp site/index.html out/index.html
+          mkdir -p out/data
+          cp data/resume.json out/data/resume.json
 
       - uses: actions/upload-pages-artifact@v3
         with:
